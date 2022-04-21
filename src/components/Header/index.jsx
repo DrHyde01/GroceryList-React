@@ -3,9 +3,16 @@ import background from "../../images/foodPattern.png";
 
 const Header = () => {
   return (
-    <div className="flex justify-center align-center w-full h-auto p-16 bg-customGreen">
-      <h1 className="title">My Grocery List</h1>
-      <p className="subtitle">For my daily use</p>
+    <div
+      className="flex justify-center align-center w-full h-auto p-14 bg-customGreen "
+      style={{ backgroundImage: `url('${background}')` }}
+    >
+      <div className="flex flex-col justify-center w-1/3 p-5 bg-customYellow shadow-[_5px_5px_15px_#000] bg-fixed animate-titleAppear">
+        <h1 className="text-4xl font-semibold text-center p-4">
+          My Grocery List
+        </h1>
+        <p className="text-center p-1">For my daily use</p>
+      </div>
     </div>
   );
 };
