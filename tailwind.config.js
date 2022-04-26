@@ -5,6 +5,7 @@ module.exports = {
       colors: {
         customGreen: "rgba(0, 228, 114, 0.829)",
         customYellow: "#fdff9f",
+        customPink: "#E72264",
       },
 
       keyframes: {
@@ -18,7 +19,7 @@ module.exports = {
         },
       },
       animation: {
-        titleAppear: "titleAppear 1s ease-in-out",
+        titleAppear: "titleAppear 500ms ease-in-out",
       },
     },
   },
