@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect, Fragment } from "react";
 import { v4 as uuidv4 } from "uuid";
+import ReactTooltip from "react-tooltip";
 import { AiOutlinePlus } from "react-icons/ai";
 import { IoBasketOutline, IoTrashOutline } from "react-icons/io5";
 import Items from "../Items";
@@ -60,14 +61,19 @@ const List = () => {
             className="border-2 border-solid border-gray-400 bg-white w-full  md:w-1/2 lg:w-1/3 2xl:w-1/4 h-12 pl-2  focus:outline-none  focus:border-customGreen"
             placeholder="Add a product"
           />
-          <button className="flex justify-center items-center md:ml-4 mt-8 md:mt-0 p-3 rounded-full bg-customGreen hover:scale-110 hover:shadow-2xl transition delay-150 duration-300 ease-in-out">
+          <button
+            className="flex justify-center items-center md:ml-4 mt-8 md:mt-0 p-3 rounded-full bg-customGreen hover:scale-110 hover:shadow-2xl transition delay-150 duration-300 ease-in-out"
+            data-tip="Add a item"
+            data-for="addBtn"
+          >
+            <ReactTooltip id="addBtn" place="top" type="light" effect="solid" />
             <AiOutlinePlus size={25} color={"white"} />
           </button>
         </form>
 
         {list.length > 0 ? (
           <Fragment>
-            <div className="flex flex-col justify-start w-full md:w-3/4 lg:w-2/6 m-10 p-8 bg-customYellow shadow-lg animate-titleAppear">
+            <div className="flex flex-col justify-start w-full md:w-3/4 lg:w-2/6 m-10 p-8 bg-customYellow shadow-lg -rotate-2 animate-titleAppear">
               {list.map((a, id) => (
                 <Items
                   key={id}
@@ -81,7 +87,15 @@ const List = () => {
             <button
               onClick={cleanItems}
               className="flex justify-center items-center p-2 rounded-lg bg-customPink hover:shadow-2xl hover:scale-110 transition delay-150 duration-300 ease-in-out"
+              data-tip="Delete your list"
+              data-for="deleteBtn"
             >
+              <ReactTooltip
+                id="deleteBtn"
+                place="top"
+                type="light"
+                effect="solid"
+              />
               <IoTrashOutline size={28} color={"#FFFF"} />
             </button>
           </Fragment>
