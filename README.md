@@ -10,3 +10,7 @@
 <p align="center">
 <img src="src/images/GL_screen.png" alt="screenshot">
 </p>
+
+### Not a final release
+
+Listening to new ideas / features 🙌
