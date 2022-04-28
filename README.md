@@ -5,4 +5,4 @@
 
 ## A simple grocery list for daily use
 
-![Grocery screenshot] https://github.com/DrHyde01/GroceryList-v2/blob/main/src/images/GL_screen.png
+![screenshot] (https://github.com/DrHyde01/GroceryList-v2/blob/main/src/images/GL_screen.png)
