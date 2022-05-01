@@ -60,6 +60,7 @@ const List = () => {
             value={item}
             className="border-2 border-solid border-gray-400 bg-white w-full  md:w-1/2 lg:w-1/3 2xl:w-1/4 h-12 pl-2  focus:outline-none  focus:border-customGreen"
             placeholder="Add a product"
+            required
           />
           <button
             className="flex justify-center items-center md:ml-4 mt-8 md:mt-0 p-3 rounded-full bg-customGreen hover:scale-110 hover:shadow-2xl transition delay-150 duration-300 ease-in-out"
